@@ -1,0 +1,37 @@
+@import "../../sass-common/variables", "../../sass-common/mixin";
+
+.dashboard {
+  // .dashboard__text-box
+  flex: 1 2 30vw;
+  max-width: 520px;
+  min-width: 340px;
+  height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &__text-box {
+    display: flex;
+    margin: 15px 16px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid $card-hover;
+  }
+  // .dashboard__text
+
+  &__text {
+    font-size: 0.75rem;
+    line-height: 1.333;
+    text-align: center;
+
+    &::before {
+      content: "🔒";
+      margin-right: 3px;
+    }
+  }
+}

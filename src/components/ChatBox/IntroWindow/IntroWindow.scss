@@ -1,0 +1,58 @@
+@import "../../../sass-common/variables", "../../../sass-common/mixin";
+.intro-window {
+  // .intro-window__image
+  background-color: $main-grey;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__image {
+    background-image: url(../../../assets/intro-window.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30vw;
+    height: 30vw;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  // .intro-window__text-box
+
+  &__text-box {
+    text-align: center;
+  }
+
+  // .intro-window__title
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 40px 0 0;
+  }
+
+  // .intro-window__text
+
+  &__text {
+    margin: 20px 0 0;
+    font-size: 1rem;
+    color: $secondary;
+    max-width: 500px;
+  }
+
+  // .intro-window__info-text
+
+  &__info-text {
+    position: absolute;
+    bottom: 5vh;
+    margin: 0;
+
+    &::before {
+      content: "🔒";
+      margin-right: 3px;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@import "../../sass-common/variables", "../../sass-common/mixin";
+.header {
+  // .header__profile
+  background-color: $main-grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+
+  &__profile {
+    display: flex;
+    cursor: pointer;
+  }
+
+  // .header__profile-img-box
+
+  &__profile-img-box {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  // .header__profile-img
+
+  &__profile-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  // .header__profile-info
+
+  &__profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+    line-height: 1.2;
+  }
+
+  // .header__profile-name
+
+  &__profile-name {
+    margin: 0;
+    font-size: 1rem;
+  }
+  // .header__profile-text
+
+  &__profile-text {
+    margin: 0;
+    font-size: 0.75rem;
+    color: $secondary;
+  }
+
+  // .header__button-box
+
+  &__button-box {
+    display: flex;
+  }
+
+  // .header__button-item
+
+  &__button-item {
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  // .header__button
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    @include buttonReadyForImg();
+  }
+
+  // .header__button-img
+
+  &__button-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    // .header__button-img_group
+
+    &_group {
+      background-image: url(../../assets/icon-group.svg);
+      width: 28px;
+      height: 28px;
+    }
+
+    // .header__button-img_new-chat
+
+    &_new-chat {
+      background-image: url(../../assets/icon-new-chat.svg);
+      width: 24px;
+      height: 24px;
+    }
+
+    &_search {
+      background-image: url(../../assets/icon-search.svg);
+      width: 20px;
+      height: 20px;
+    }
+
+    // .header__button-img_menu
+
+    &_menu {
+      background-image: url(../../assets/icon-menu-vertical.svg);
+      width: 28px;
+      height: 28px;
+    }
+  }
+}

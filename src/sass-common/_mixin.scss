@@ -1,0 +1,12 @@
+@mixin clearButton() {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+@mixin buttonReadyForImg() {
+  @include clearButton();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,7 @@
+@import "../../sass-common/variables", "../../sass-common/mixin";
+
+.chatbox {
+  flex: 2 1 auto;
+  height: 100vh;
+  border-left: 1px solid $extra-grey;
+}

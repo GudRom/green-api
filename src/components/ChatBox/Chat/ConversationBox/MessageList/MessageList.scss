@@ -1,0 +1,15 @@
+@import "../../../../../sass-common/variables",
+  "../../../../../sass-common/mixin";
+.message-list {
+  // .message-list__element
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__element {
+    margin-top: 5px;
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+}

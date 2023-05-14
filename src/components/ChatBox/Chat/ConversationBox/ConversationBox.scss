@@ -1,0 +1,14 @@
+@import "../../../../sass-common/variables", "../../../../sass-common/mixin";
+
+.conversation-box {
+  width: 100%;
+  background-image: url(../../../../assets/bg-chat.png);
+  background-position: center;
+  background-size: cover;
+  background-color: $chat-bg-color;
+  height: calc(100vh - 60px - 54px);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
