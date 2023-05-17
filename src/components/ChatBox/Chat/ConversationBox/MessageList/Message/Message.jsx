@@ -1,13 +1,15 @@
 import "./Message.scss";
 
-const Message = () => {
+const Message = ({ message }) => {
+  const timestamp = new Date(message.timestamp * 1000);
+  const hours = timestamp.getHours();
+  const min = timestamp.getMinutes();
   return (
-    <div className="message">
-      <p className="message__text">
-        Hi you mothefucker! Where is my money?Hi you mothefucker! Where is my
-        money?Hi you modfasdfsadfasdfsadf asdfasdfasdfasd as fas
+    <div className={`message ${message.isOwn ? "message_own" : ""}`}>
+      <p className="message__text">{message.text}</p>
+      <p className="message__date">
+        {hours}:{min}
       </p>
-      <p className="message__date">19:11</p>
     </div>
   );
 };

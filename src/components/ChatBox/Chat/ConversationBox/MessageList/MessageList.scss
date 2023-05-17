@@ -1,14 +1,29 @@
 @import "../../../../../sass-common/variables",
   "../../../../../sass-common/mixin";
+
 .message-list {
-  // .message-list__element
-  padding: 15px 30px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  // .message-list__element
 
   &__element {
+    max-width: 60%;
+    width: fit-content;
     margin-top: 5px;
-    &:last-child {
+
+    &_own {
+      align-self: flex-end;
+    }
+
+    &:first-child {
       margin-top: 0;
     }
   }

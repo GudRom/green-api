@@ -34,6 +34,7 @@
   &__chat-info {
     box-sizing: border-box;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,26 +62,5 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-  }
-
-  // .chat-card__date
-
-  &__date {
-    font-size: 0.75rem;
-    margin: 0;
-    color: $secondary;
-  }
-
-  // .chat-card__last-message
-
-  &__last-message {
-    font-size: 0.875rem;
-    width: 100%;
-    line-height: 1.43;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: $secondary;
-    margin: 0;
   }
 }

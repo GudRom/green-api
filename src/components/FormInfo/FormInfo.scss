@@ -1,0 +1,54 @@
+@import "../../sass-common/variables", "../../sass-common/mixin";
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // .auth__form-text
+
+  &__text {
+    font-size: 1.2rem;
+  }
+
+  // .auth__input-box
+
+  &__input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .auth__input
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid $extra-black;
+    min-width: 290px;
+    max-width: 350px;
+    padding: 0.5em 1em;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+
+  &__error {
+    color: tomato;
+  }
+
+  &__btn {
+    background-color: $fake-header-color;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.5em 1em;
+    border-radius: 0.4em;
+
+    &_disable {
+      opacity: 0.3;
+      &:hover {
+        opacity: 0.3;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

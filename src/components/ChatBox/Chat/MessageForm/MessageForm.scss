@@ -3,18 +3,9 @@
 .footer {
   background-color: $main-grey;
   padding: 5px 16px;
-}
-
-.form {
   display: flex;
-  // .form__button-box
-
-  &__button-box {
-    display: flex;
-    align-items: center;
-  }
-
-  // .form__button
+  align-items: center;
+  // .footer__button
 
   &__button {
     @include buttonReadyForImg();
@@ -23,22 +14,22 @@
     cursor: pointer;
   }
 
-  // .form__button-img
+  // .footer__button-img
 
   &__button-img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
-    // .form__button-img_emoji
-    
+    // .footer__button-img_emoji
+
     &_emoji {
       background-image: url(../../../../assets/icon-emoji.svg);
       width: 24px;
       height: 24px;
     }
 
-    // .form__button-img_clip
+    // .footer__button-img_clip
 
     &_clip {
       background-image: url(../../../../assets/icon-clip.svg);
@@ -46,7 +37,7 @@
       height: 20px;
     }
 
-    // .form__button-img_send
+    // .footer__button-img_send
 
     &_send {
       background-image: url(../../../../assets/icon-send.svg);
@@ -54,6 +45,11 @@
       height: 17px;
     }
   }
+}
+
+.form {
+  display: flex;
+  flex: 1 1 auto;
 
   // .form__input
 

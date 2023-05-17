@@ -1,0 +1,61 @@
+@import "../../../sass-common/variables", "../../../sass-common/mixin";
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in;
+
+  &_open {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+  }
+
+  // .popup__header
+
+  &__header {
+    background-color: $header-popup-color;
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+
+  // .popup__btn-close
+
+  &__btn-close {
+    @include buttonReadyForImg();
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  &__btn-img {
+    background-image: url(../../../assets/icon-arrow.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+  }
+
+  // .popup__title
+
+  &__title {
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 25px;
+  }
+
+  &__children-box {
+    padding: 15px 5px;
+  }
+}

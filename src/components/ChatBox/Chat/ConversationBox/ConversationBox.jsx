@@ -1,10 +1,10 @@
 import MessageList from "./MessageList/MessageList";
 import "./ConversationBox.scss";
 
-const ConversationBox = () => {
+const ConversationBox = ({ messages }) => {
   return (
     <div className="conversation-box">
-      <MessageList />
+      <MessageList messages={messages} />
     </div>
   );
 };

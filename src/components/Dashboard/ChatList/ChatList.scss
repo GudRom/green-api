@@ -2,4 +2,27 @@
 
 .chatlist {
   width: 100%;
+  height: calc(100vh - 51px - 60px);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &__text-box {
+    display: flex;
+    margin: 15px 16px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid $card-hover;
+  }
+
+  &__text {
+    font-size: 0.75rem;
+    line-height: 1.333;
+    text-align: center;
+  }
 }
